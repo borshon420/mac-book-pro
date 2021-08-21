@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book pro</title>
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="icons/cart.png" type="image/x-icon">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/41ca079110.js" crossorigin="anonymous"></script>
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <section class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-6">
+                <img src="images/mac.png" width="100%" alt="">
+                </div>
+            <div class="col-sm-12 col-lg-6">
+              <h1 class="text-uppercase fw-bold">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+              <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two thunderbolt/USB 4 ports Magic Mouse Magic keyboard - US English</p>
+                <div class="mb-4">
+                    <h4>Memory</h4>
+                    <button
+                     id="memory-minus" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                    <button  
+                    id="memory-plus" type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                </div>
+                <div class="mb-4">
+                <h4>Storage</h4>
+                    <button  id="storage-minus"type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
+                    <button  id="storage-plus-no-1" type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
+                    <button 
+                    id="storage-plus-no-2" type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+                </div>
+                <div class="mb-4">
+                    <h4>Choose your delivery option</h4>
+                    <button 
+                    id="delivery-minus" type="button" class="btn btn-outline-secondary">Friday, Aug 25 Free Prime Delivery</button>
+                    <button 
+                    id="delivery-plus" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
+                </div>
+                <div class="mt-5 mb-4 w-50 fw-bold">
+                    <table class="table">
+                        <tr>
+                            <th scope="col">Best Price</th>
+                            <th scope="col">$<span id="best-price">1299</span></th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Extra Memory Cost</th>
+                            <th scope="col">$<span id="memory-price">0</span></th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Extra Storage Cost</th>
+                            <th scope="col">$<span id="storage-price">0</span></th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Delivery Charge</th>
+                            <th scope="col">$<span id="delivery-price">0</span></th>
+                        </tr>
+                        
+                        <tr>    
+                            <th scope="col">Total Price</th>
+                            <th scope="col">$ <span id="total-price">1299</span></th>
+                        </tr>
+                      </table>
+                </div>
+                <div class="w-50 fw-bold">
+                    <h4>Add Promo code</h4>
+                    <div class="input-group input-group-sm">
+                        <input id="discount-price" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                        <span><button id="discount-btn" type="button" class="btn btn-danger color-white">Apply</button></span>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <hr>
+        <div>
+            <table class="mx-auto">
+                <tr> 
+                    <th scope="col"><span class="fs-3 fw-bold">Total:$</span><span id="all-total" class="fs-3 fw-bold">1299</span></th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <script src="js/app.js"></script>
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
